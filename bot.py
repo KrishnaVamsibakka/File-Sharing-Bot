@@ -42,7 +42,7 @@ class Bot(Client):
 
         if FORCE_SUB_CHANNEL:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL)).Cartoonworldtelugu_india
                 if not link:
                     await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
                     link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
@@ -55,7 +55,7 @@ class Bot(Client):
                 sys.exit()
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
-            self.db_channel = db_channel
+            self.1001612345904 = db_channel
             test = await self.send_message(chat_id = db_channel.id, text = "Test Message")
             await test.delete()
         except Exception as e:
